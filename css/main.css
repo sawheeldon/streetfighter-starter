@@ -66,7 +66,7 @@ Content styles (Main Module)
 .main .ryu-throwing{
     background-image: url(../images/ryu-throwing-hadouken.png);
 }
-.main .hadouken, .main .ryu-ready, .main .ryu-still, .main .ryu-throwing{
+.main .ryu-ready, .main .ryu-still, .main .ryu-throwing{
     background-repeat: no-repeat;
 }
 
@@ -75,11 +75,13 @@ Content styles (Main Module)
     width 156px;
     height:90px;
     display:none;
-    position:absolute;
+    position:relative;
     z-index:10;
     top:167px;
     left:520px;
     float:left;
+    background-size:50%;
+    background-repeat:no-repeat;
 }
 /* -------------------------------------
 Footer styles (Main Module)
