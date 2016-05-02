@@ -30,8 +30,8 @@ body {
 }
 .main {
     background-image: url(../images/large-background.gif);
-    background-repeat: none;
-    background-size:1500px 470px;
+    background-repeat: no-repeat;
+    background-size:100% 470px;
     margin-top: 110px;
     padding-left: 100px;
     min-width: 1200px;
@@ -97,7 +97,7 @@ Content styles (Main Module)
     padding-top: 11rem;
     padding-right: 5rem;
     width: 301px;
-    right: 971px;
+    left: 28px;
     z-index: 20000;
     text-align:center;
 }
