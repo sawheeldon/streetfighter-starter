@@ -38,6 +38,8 @@ body {
     height: 470px;
     position: relative;
     z-index: 1;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
 }
 /* -------------------------------------
 Header styles (Main Module)
@@ -87,6 +89,17 @@ Content styles (Main Module)
     background-size:90%;
     background-repeat:no-repeat;
 }
+.main .how-to {
+        color: aliceblue;
+        float:inherit;
+        position: absolute;
+        padding-top: 11rem;
+        padding-right: 5rem;
+        width: 301px;
+        right: 971px;
+        z-index: 20000;
+    text-align:center;
+    }
 /* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)

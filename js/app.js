@@ -39,21 +39,34 @@ $(document).ready(function () {
         if (key.keyCode == 88) {
             $('.ryu-action').hide();
             $('.ryu-cool').show();
+            playCool();
         }
     });
 
     /* key up */
     $(document).keyup(function (key) {
         if (key.keyCode == 88) {
-            $('ryu-action').hide();
-            $('ryu-still').show();
+            $('.ryu-action').hide();
+            $('.ryu-still').show();
+            $('#cool') [0].pause();
         }
     });
 });
     /* Sounds */
-
+var hadoukenSound=false;
     function playHadouken () {
+        hadoukenSound = !hadoukenSound;
+        if (hadoukenSound) {
         $('#hadouken-sound') [0].volume = 0.5;
         $('#hadouken-sound') [0].load();
         $('#hadouken-sound') [0].play();
+    }
+    }
+
+var coolSound=false;
+    function playCool () {
+        coolSound = !coolSound;
+        if (coolSound) {
+            $('#cool') [0].play();
+        }
     }
